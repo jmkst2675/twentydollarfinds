@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Twenty Dollar Finds — Cool stuff on Amazon. Nothing over twenty bucks.</title>
-<meta name="description" content="Twenty Dollar Finds: cool stuff on Amazon, nothing over twenty bucks. This week's find: KVIDIO Bluetooth Headphones under $20.">
+<meta name="description" content="Twenty Dollar Finds: cool stuff on Amazon, nothing over twenty bucks. This week's find: The Pink Stuff cleaning paste under $20.">
 <meta name="theme-color" content="#141417">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Twenty Dollar Finds">
@@ -63,6 +63,13 @@
   }
   header.brand h1 .hl{color:var(--yellow);}
   .tagline{color:var(--muted);font-size:1rem;margin-top:0.35rem;}
+  nav.tabs{display:flex;justify-content:center;gap:0.5rem;margin-top:1.1rem;}
+  nav.tabs a{
+    color:var(--muted);text-decoration:none;font-weight:700;font-size:0.9rem;
+    padding:0.55rem 1rem;border-radius:999px;border:1px solid var(--ink-line);
+  }
+  nav.tabs a[aria-current="page"]{background:var(--yellow);color:#111;border-color:var(--yellow);}
+  nav.tabs a:not([aria-current="page"]):active{background:var(--ink-soft);}
   /* ---- Featured find ---- */
   .label-wrap{text-align:center;margin-bottom:0.9rem;}
   .find-label{
@@ -133,38 +140,42 @@
     <img src="logo.png" alt="Twenty Dollar Finds logo" width="104" height="104">
     <h1>Twenty Dollar <span class="hl">Finds</span></h1>
     <p class="tagline">Cool stuff on Amazon. Nothing over twenty bucks.</p>
+    <nav class="tabs" aria-label="Site">
+      <a href="index.html" aria-current="page">This week's find</a>
+      <a href="deals.html">Past finds</a>
+    </nav>
   </header>
 
   <main>
     <section aria-label="This week's find">
       <div class="label-wrap"><span class="find-label">This week's find</span></div>
       <div class="card">
-        <h2>KVIDIO Bluetooth Headphones</h2>
-        <p class="model">Model WH201A &middot; Over-ear wireless</p>
+        <h2>Stardrops "The Pink Stuff" Cleaning Paste</h2>
+        <p class="model">Cleaning paste &middot; The CleanTok phenomenon</p>
         <div class="stats">
-          <div class="stat"><strong>4.5&#9733;</strong><span>Rating</span></div>
-          <div class="stat"><strong>31,622</strong><span>Reviews</span></div>
-          <div class="stat"><strong>65 hr</strong><span>Battery</span></div>
+          <div class="stat"><strong>4.4&#9733;</strong><span>Rating</span></div>
+          <div class="stat"><strong>200K+</strong><span>Reviews</span></div>
+          <div class="stat"><strong>$9.99</strong><span>At feature time</span></div>
         </div>
         <p class="blurb">
-          30,000+ reviewers rate them 4.5 stars, and plenty of reviews say they
-          punch way above their price. Wireless over-ears with a 65-hour battery
-          claim on the listing — reviewers say battery life is the standout.
+          The cleaning paste that took over CleanTok. Reviewers say it melts
+          baked-on grease off pans, ovens, sinks, and tile — a mild abrasive
+          made for the tough jobs (spot-test delicate finishes first).
         </p>
         <!-- Fallback href mirrors AFFILIATE_TAG in the script below; the JS overwrites this on load, so updating the const is enough. -->
-        <a class="cta" id="amazon-link" href="https://www.amazon.com/dp/B09BF64J55?tag=twentydollarf-20" rel="nofollow sponsored noopener" target="_blank">View on Amazon</a>
+        <a class="cta" id="amazon-link" href="https://www.amazon.com/dp/B0GL3FKKTD?tag=twentydollarf-20" rel="nofollow sponsored noopener" target="_blank">View on Amazon</a>
         <p class="microcopy">Opens Amazon. We may earn a commission — at no extra cost to you.</p>
         <p class="price-note">
-          Price and ratings from the Amazon listing, checked Sep 27, 2026:
-          listed at $18.98. Amazon prices change often — the price you see on
-          Amazon is the one that counts.
+          Price and ratings from the Amazon listing: $9.99 when featured
+          (live price re-verified under $20 on Oct 5, 2026). Amazon prices
+          change often — the price you see on Amazon is the one that counts.
         </p>
       </div>
     </section>
 
     <section class="soon" aria-label="More finds coming">
       <h3><span class="dot">&#9679;</span> More finds dropping soon</h3>
-      <p>New under-$20 finds every week. Follow <a href="https://www.instagram.com/twentydollarfinds" target="_blank" rel="noopener">@twentydollarfinds</a> on Instagram so you don't miss the next one.</p>
+      <p>New under-$20 finds every week. Missed one? <a href="deals.html">Browse past finds</a> — or follow <a href="https://www.instagram.com/twentydollarfinds" target="_blank" rel="noopener">@twentydollarfinds</a> on Instagram so you don't miss the next one.</p>
     </section>
   </main>
 
@@ -185,7 +196,7 @@
   (function () {
     var link = document.getElementById("amazon-link");
     if (link) {
-      link.href = "https://www.amazon.com/dp/B09BF64J55?tag=" + encodeURIComponent(AFFILIATE_TAG);
+      link.href = "https://www.amazon.com/dp/B0GL3FKKTD?tag=" + encodeURIComponent(AFFILIATE_TAG);
     }
   })();
 </script>

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Twenty Dollar Finds — Cool stuff on Amazon. Nothing over twenty bucks.</title>
-<meta name="description" content="Twenty Dollar Finds: cool stuff on Amazon, nothing over twenty bucks. This week's find: Scrub Daddy 8-pack sponges under $20.">
+<meta name="description" content="Twenty Dollar Finds: cool stuff on Amazon, nothing over twenty bucks. This week's find: Dawn Platinum Powerwash dish spray bundle under $20.">
 <meta name="theme-color" content="#141417">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Twenty Dollar Finds">
@@ -87,6 +87,10 @@
   }
   .card h2{font-size:1.35rem;line-height:1.25;margin-bottom:0.25rem;}
   .card .model{color:var(--muted);font-size:0.88rem;margin-bottom:0.9rem;}
+  .card-photo{
+    display:block;width:100%;max-height:320px;object-fit:contain;
+    border-radius:0.8rem;background:#ffffff;margin-bottom:1rem;
+  }
   .stats{display:flex;gap:0.6rem;flex-wrap:wrap;margin-bottom:1rem;}
   .stat{
     background:var(--ink);border:1px solid var(--ink-line);border-radius:0.6rem;
@@ -150,27 +154,26 @@
     <section aria-label="This week's find">
       <div class="label-wrap"><span class="find-label">This week's find</span></div>
       <div class="card">
-        <h2>Scrub Daddy Sponges &mdash; 8-Pack</h2>
-        <p class="model">Variety Colors &middot; Scratch-free, odor-resistant</p>
+        <img class="card-photo" src="https://m.media-amazon.com/images/I/81FM7duKDFL._UF1000,1000_QL80_.jpg" alt="Dawn Platinum Powerwash dish spray bundle — one sprayer plus three refills" loading="lazy">
+        <h2>Dawn Platinum Powerwash Dish Spray</h2>
+        <p class="model">1 sprayer + 3 refills &middot; The CleanTok grease killer</p>
         <div class="stats">
-          <div class="stat"><strong>4.7&#9733;</strong><span>Rating</span></div>
-          <div class="stat"><strong>2,520</strong><span>Reviews</span></div>
+          <div class="stat"><strong>4.8&#9733;</strong><span>Rating</span></div>
+          <div class="stat"><strong>134,356</strong><span>Reviews</span></div>
           <div class="stat"><strong>Under $20</strong><span>At feature time</span></div>
         </div>
         <p class="blurb">
-          The smiling sponge is a Prime Day legend. FlexTexture foam that turns
-          firm in cold water for tough jobs and soft in warm water for delicate
-          ones — scratch-free, odor-resistant, and the most successful Shark
-          Tank product ever. Prime Big Deal Days usually drops the eight-pack
-          under twenty bucks — perfect time to stock up.
+          The spray that took over cleaning TikTok. Spray it on, it foams up,
+          and it cuts through grease without soaking — reviewers say it blasts
+          through greasy pans and baked-on messes that used to need an overnight
+          soak. Spray, wipe, rinse, done.
         </p>
         <!-- Fallback href mirrors AFFILIATE_TAG in the script below; the JS overwrites this on load, so updating the const is enough. -->
-        <a class="cta" id="amazon-link" href="https://www.amazon.com/dp/B0C7LHZ1N8?tag=twentydollarf-20" rel="nofollow sponsored noopener" target="_blank">View on Amazon</a>
+        <a class="cta" id="amazon-link" href="https://www.amazon.com/dp/B07YD3KQ5S?tag=twentydollarf-20" rel="nofollow sponsored noopener" target="_blank">View on Amazon</a>
         <p class="microcopy">Opens Amazon. We may earn a commission — at no extra cost to you.</p>
         <p class="price-note">
-          Live price verified under $20 on Oct 6, 2026 (Prime Big Deal Days).
-          Amazon prices change often — the price you see on Amazon is the one
-          that counts.
+          Live price verified under $20 on Oct 8, 2026. Amazon prices change
+          often — the price you see on Amazon is the one that counts.
         </p>
       </div>
     </section>
@@ -198,7 +201,7 @@
   (function () {
     var link = document.getElementById("amazon-link");
     if (link) {
-      link.href = "https://www.amazon.com/dp/B0C7LHZ1N8?tag=" + encodeURIComponent(AFFILIATE_TAG);
+      link.href = "https://www.amazon.com/dp/B07YD3KQ5S?tag=" + encodeURIComponent(AFFILIATE_TAG);
     }
   })();
 </script>
